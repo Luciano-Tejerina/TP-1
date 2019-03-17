@@ -1,0 +1,66 @@
+<html>
+<head>
+  <title>Formulario Simple</title>
+</head>
+<body>
+  <table border="6">
+  <tr>
+    <td>
+<form action="mailto:CorreoEjemplo@Gmail.com" method="post" enctype="text/plain">
+    <p><fieldset>
+  <legend>Datos personales</legend>
+  *Apellido y nombre:
+  <input type="text" name="nombre" size="30"><br>
+  *Documento de identidad:
+  <input type="text" name="dni" size="8"><br>
+  *Fecha de nacimiento:
+  <input type="text" name="fechanacimiento" size="12"><br>
+  *Dirección:
+  <input type="text" name="direccionpersona" size="30"><br>
+  *Contraseña:
+  <input type="password" name="clave" size="25"><br>
+  </fieldset>
+  </p>
+  <p>*Escriba Su Comentario</p>
+  <p><textarea name="comentarios" rows="4" cols="45"></textarea></p>
+  <p>*Elija una Opcion</p>
+  <p>
+    Sorpresa 1<input type="radio" name="Opcion" value="1"><br>
+    Sorpresa 2<input type="radio" name="Opcion" value="2"><br>
+    Sorpresa 3<input type="radio" name="Opcion" value="3"><br>
+    Sorpresa 4<input type="radio" name="Opcion" value="4"><br>
+  </p>
+  <p>*Elija Uno o Varios Colores:</p>
+  <p><select name="colores[]" size="6" multiple>
+ <option value="1">Rojo</option>
+ <option value="2">Verde</option>
+ <option value="3">Azul</option>
+ <option value="4">Amarillo</option>
+ <option value="5">Blanco</option>
+ <option value="6">Negro</option>
+ <option value="7">Naranja</option>
+ <option value="8">Violeta</option>
+</select>
+</p>
+<p>*Elija entre estas Frutas</p>
+  <p>
+    <select name="articulo">
+    <optgroup label="Frutas">
+    <option value="1">Naranjas</option>
+    <option value="2">Manzanas</option>
+    <option value="3">Peras</option>
+    <option value="4">Uvas</option>
+    <option value="5">Limon</option>
+    <option value="6">Tomate</option>
+  </optgroup>
+  </select>
+  </p>
+    <button type="submit">Enviar<img src="panda.png" width="20" height="20" alt="..."></button>
+    <input type="reset"  value="Borrar">
+  </p>
+</form>
+</td>
+</tr>
+</table>
+</body>
+</html>
